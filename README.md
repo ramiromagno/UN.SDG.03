@@ -1,0 +1,22 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# UN.SDG.03
+
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/UN.SDG.03)](https://CRAN.R-project.org/package=UN.SDG.03)
+<!-- badges: end -->
+
+`{UN.SDG.03}` provides a tidy data set of the UN Sustainable Development
+Goal 3 (Health and Well-being) Indicators Database archived on 12
+September 2023.
+
+## Installation
+
+You can install the development version of UN.SDG.03 like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```

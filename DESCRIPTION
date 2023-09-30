@@ -1,0 +1,16 @@
+Package: UN.SDG.03
+Title: UN Sustainable Development Goal 3: Health and Well-Being (Update: 12 September 2023)
+Version: 0.0.1
+Authors@R: c(
+    person("Ramiro", "Magno", , "rmagno@pattern.institute", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Pattern Institute", role = c("cph", "fnd"))
+  )
+Description: UN Sustainable Development Goal 3 (Health and Well-being)
+  Indicators Database archived on 12 September 2023.
+License: CC0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    tibble
