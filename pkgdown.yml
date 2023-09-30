@@ -2,8 +2,8 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2023-09-30T13:21Z
+last_built: 2023-09-30T13:23Z
 urls:
-  reference: http://rmagno.eu/UN.SDG.03/reference
-  article: http://rmagno.eu/UN.SDG.03/articles
+  reference: https://rmagno.eu/UN.SDG.03/reference
+  article: https://rmagno.eu/UN.SDG.03/articles
 
