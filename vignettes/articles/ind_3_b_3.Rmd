@@ -1,0 +1,29 @@
+---
+title: "Indicator 3.b.3"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+library(ggbeeswarm)
+
+filter(sdg_03_series, indicator == "3.b.3")
+```
+
+```{r}
+code <- "SH_HLF_EMED"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
+

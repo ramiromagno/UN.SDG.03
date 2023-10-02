@@ -1,0 +1,28 @@
+---
+title: "Indicator 3.9.2"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+library(ggbeeswarm)
+
+filter(sdg_03_series, indicator == "3.9.2")
+```
+
+```{r}
+code <- "SH_STA_WASHARI"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value)) +
+  geom_beeswarm() +
+  ggtitle(title)
+```

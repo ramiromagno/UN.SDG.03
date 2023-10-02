@@ -1,0 +1,38 @@
+---
+title: "Indicator 3.5.1"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+
+filter(sdg_03_series, indicator == "3.5.1")
+```
+
+```{r}
+code <- "SH_SUD_ALCOL"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = sex, y = value)) +
+  geom_boxplot() +
+  ggtitle(title) +
+  theme(legend.position = "none")
+```
+
+```{r}
+code <- "SH_SUD_TREAT"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title) +
+  facet_grid(rows = vars(substance_use_disorders))
+```

@@ -1,0 +1,55 @@
+---
+title: "Indicator 3.b.1"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+library(ggbeeswarm)
+
+filter(sdg_03_series, indicator == "3.b.1")
+```
+
+```{r}
+code <- "SH_ACS_DTP3"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
+
+```{r}
+code <- "SH_ACS_MCV2"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
+
+```{r}
+code <- "SH_ACS_PCV3"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
+
+```{r}
+code <- "SH_ACS_HPV"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
