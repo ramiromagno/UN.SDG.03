@@ -19,13 +19,14 @@ filter(sdg_03_series, indicator == "3.d.1")
 ```
 
 ```{r}
+#| fig.height = 40
 code <- "SH_IHR_CAPS"
 title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
 sdg_03_data[[code]] |>
   ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
   geom_line() +
   ggtitle(title) +
-  facet_wrap(vars(ihr_capacity))
+  facet_grid(rows = vars(ihr_capacity))
 ```
 
 
