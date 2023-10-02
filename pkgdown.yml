@@ -1,8 +1,19 @@
 pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
-articles: {}
-last_built: 2023-09-30T13:23Z
+articles:
+  ind_3_1_1: ind_3_1_1.html
+  ind_3_1_2: ind_3_1_2.html
+  ind_3_2_1: ind_3_2_1.html
+  ind_3_2_2: ind_3_2_2.html
+  ind_3_3_1: ind_3_3_1.html
+  ind_3_3_2: ind_3_3_2.html
+  ind_3_3_3: ind_3_3_3.html
+  ind_3_3_4: ind_3_3_4.html
+  ind_3_3_5: ind_3_3_5.html
+  ind_3_4_1: ind_3_4_1.html
+  ind_3_4_2: ind_3_4_2.html
+last_built: 2023-10-02T00:23Z
 urls:
   reference: https://rmagno.eu/UN.SDG.03/reference
   article: https://rmagno.eu/UN.SDG.03/articles
