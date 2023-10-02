@@ -13,12 +13,13 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
-    dplyr,
     tibble
 URL: http://rmagno.eu/UN.SDG.03/
 Depends: 
     R (>= 2.10)
 LazyData: true
 Config/Needs/website: rmarkdown
-Suggests: 
+Suggests:
+    dplyr,
+    ggbeeswarm,
     ggplot2
