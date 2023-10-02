@@ -1,0 +1,38 @@
+---
+title: "Indicator 3.4.1"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+
+filter(sdg_03_series, indicator == "3.4.1")
+```
+
+```{r}
+code <- "SH_DTH_NCOM"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title) +
+  facet_grid(rows = vars(sex))
+```
+
+```{r}
+code <- "SH_DTH_NCD"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title) +
+  facet_grid(vars(name_of_non_communicable_disease), vars(sex))
+```

@@ -1,0 +1,27 @@
+---
+title: "Indicator 3.3.4"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(UN.SDG.03)
+library(dplyr, warn.conflicts = FALSE)
+library(ggplot2)
+
+filter(sdg_03_series, indicator == "3.3.4")
+```
+
+```{r}
+code <- "SH_HAP_HBSAG"
+title <- filter(sdg_03_series, series_code == code) |> pull("series_description")
+sdg_03_data[[code]] |>
+  ggplot(aes(x = time_period, y = value, group = geo_area_name)) +
+  geom_line() +
+  ggtitle(title)
+```
