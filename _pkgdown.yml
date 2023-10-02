@@ -2,3 +2,8 @@ url: https://rmagno.eu/UN.SDG.03/
 template:
   bootstrap: 5
 
+home:
+  title: "UN Sustainable Development Goal 3: Health and Well-Being"
+  description: "An R Data Package of SDG Goal 3 Indicators (Update: 12 September 2023)"
+
+

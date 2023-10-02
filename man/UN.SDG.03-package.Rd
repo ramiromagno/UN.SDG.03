@@ -11,7 +11,9 @@ UN Sustainable Development Goal 3 (Health and Well-being) Indicators Database ar
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://rmagno.eu/UN.SDG.03/}
+  \item \url{https://github.com/ramiromagno/UN.SDG.03}
+  \item \url{https://rmagno.eu/UN.SDG.03/}
+  \item Report bugs at \url{https://github.com/ramiromagno/UN.SDG.03/issues}
 }
 
 }
