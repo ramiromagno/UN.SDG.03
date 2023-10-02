@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.9.1"
+subtitle: "Mortality rate attributed to household and ambient air pollution"
 ---
 
 ```{r, include = FALSE}

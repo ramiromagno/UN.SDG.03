@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.b.3"
+subtitle: "Total net official development assistance to medical research and basic health sectors"
 ---
 
 ```{r, include = FALSE}

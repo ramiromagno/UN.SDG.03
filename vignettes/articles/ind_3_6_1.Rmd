@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.6.1"
+subtitle: "Death rate due to road traffic injuries"
 ---
 
 ```{r, include = FALSE}

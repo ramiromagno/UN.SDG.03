@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.8.2"
+subtitle: "Proportion of population with large household expenditures on health as a share of total household expenditure or income"
 ---
 
 ```{r, include = FALSE}

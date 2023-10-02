@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.4.2"
+subtitle: "Suicide mortality rate"
 ---
 
 ```{r, include = FALSE}

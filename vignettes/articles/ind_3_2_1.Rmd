@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.2.1"
+subtitle: "Under-5 mortality rate"
 ---
 
 ```{r, include = FALSE}

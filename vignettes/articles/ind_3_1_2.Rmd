@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.1.2"
+subtitle: "Proportion of births attended by skilled health personnel"
 ---
 
 ```{r, include = FALSE}

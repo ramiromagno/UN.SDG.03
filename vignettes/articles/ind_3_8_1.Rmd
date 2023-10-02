@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.8.1"
+subtitle: "Coverage of essential health services"
 ---
 
 ```{r, include = FALSE}

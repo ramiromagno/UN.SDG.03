@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.a.1"
+subtitle: "Age-standardized prevalence of current tobacco use among persons aged 15 years and older"
 ---
 
 ```{r, include = FALSE}

@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.c.1"
+subtitle: "Health worker density and distribution"
 ---
 
 ```{r, include = FALSE}

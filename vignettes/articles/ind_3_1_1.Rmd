@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.1.1"
+subtitle: "Maternal mortality ratio"
 ---
 
 ```{r, include = FALSE}

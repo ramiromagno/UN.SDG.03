@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.b.1"
+subtitle: "Proportion of the target population covered by all vaccines included in their national programme"
 ---
 
 ```{r, include = FALSE}

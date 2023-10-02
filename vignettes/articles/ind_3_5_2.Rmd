@@ -1,5 +1,6 @@
 ---
 title: "Indicator 3.5.2"
+subtitle: "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol"
 ---
 
 ```{r, include = FALSE}
